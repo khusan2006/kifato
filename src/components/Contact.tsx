@@ -2,7 +2,7 @@ import { Mail, PhoneCall, PhoneForwardedIcon, Youtube } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="bg-gray-200    sticky">
+    <section className="bg-gray-200 fixed top-0 left-0 w-full">
       <div className="max-w-screen-2xl flex items-center justify-between px-28 py-8 mx-auto">
         <a className="flex gap-3 items-center" href="tel:1234567890">
           <PhoneCall stroke="red" size={"30"} /> SAVDO BO'LIMI
