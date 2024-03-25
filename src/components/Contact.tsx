@@ -20,7 +20,7 @@ const Contact = () => {
           BOGLANISH
         </a>
         <a className="flex gap-3 items-center" href="https://youtube.com">
-          <Youtube stroke="red" size={"30"} /> YOUTUBE
+          <Youtube stroke="red" size={"30"} /> YOUTUBE SAHIFAMIZ
         </a>
       </div>
     </section>
