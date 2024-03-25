@@ -1,11 +1,13 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import Contact from "./Contact";
 
 const Layout = () => {
   return (
-    <div>
+    <>
+      <Contact />
       <Outlet />
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Layout
+export default Layout;
