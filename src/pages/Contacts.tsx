@@ -14,8 +14,8 @@ const Contacts = () => {
     <section>
       <MaxWidthWrapper>
         <Breadcrumbs breadcrumbs={BREADCRUMBS} />
-        <div className="flex h-[25rem] gap-3 ">
-          <div className="flex-[2] overflow-y-scroll p-2">
+        <div className="flex flex-col md:flex-row md:h-[25rem] gap-3 ">
+          <div className="flex-[2] md:overflow-y-scroll p-2">
             <div className="flex flex-col gap-3 w-[70%] text-sm">
               <a className="flex gap-2 items-center " href="/">
                 <MapPin stroke="red" className="shrink-0" />
