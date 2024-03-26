@@ -16,7 +16,7 @@ const Services = () => {
       <MaxWidthWrapper>
         <Breadcrumbs breadcrumbs={BREADCRUMBS} />
         <ServicesSlider />
-        <div className="bg-red-500 text-white flex py-8 px-10 border-[2px] shadow-lg gap-4 border-white">
+        <div className="bg-red-500 text-white flex  flex-col md:flex-row py-8 px-10 border-[2px] shadow-lg gap-4 border-white">
           <SlidersVerticalIcon size={"100"} stroke="black" />
           <div className="">
             <h5
