@@ -59,7 +59,7 @@ const settings = {
   };
 const ServicesSlider = () => {
   return (
-    <Slider {...settings} className="mt-20 mb-12">
+    <Slider {...settings} className=" mb-12">
       <img src={CarouselImage1} alt="guy is fixing the fridge" />
       <img src={CarouselImage2} alt="image of fridge" />
       <img src={CarouselImage3} alt="guy is fixing the fridge" />
