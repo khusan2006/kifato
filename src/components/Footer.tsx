@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-200 py-12">
       <MaxWidthWrapper className="">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row md:items-center gap-12 md:gap-0 md:justify-between">
           <div className="w-[16rem]">
             <h4 className="text-2xl text-gray-600 mb-3">Kontaktlar</h4>
             <div className="w-full h-[1px] bg-gray-300" />
