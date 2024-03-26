@@ -10,7 +10,9 @@ const MobileNavbar = () => {
   };
   return (
     <header className="relative md:hidden bg-gray-100 py-28 flex justify-between items-center px-6">
-      <img src={Logo} alt="kifato logo" className="w-52" />
+     <NavLink to={'/'}>
+     <img src={Logo} alt="kifato logo" className="w-52" />
+     </NavLink>
       <div className="flex lg:hidden">
         <button
           type="button"
@@ -29,12 +31,12 @@ const MobileNavbar = () => {
       >
         <X className="absolute top-6 right-6" onClick={handleMenu} />
         <div className="flex flex-col justify-center items-center h-full gap-5 text-base">
-          <NavLink to={"/"}>Asosiy</NavLink>
-          <NavLink to={"/"}>Xizmat va Kafolat</NavLink>
-          <NavLink to={"/"}>Kontakt</NavLink>
-          <NavLink to={"/"}>Zavodlar haqida</NavLink>
-          <NavLink to={"/"}>Kifato rasmiy saytlari</NavLink>
-          <NavLink to={"/"}>Showrumlar</NavLink>
+          <NavLink onClick={handleMenu} to={"/"}>Asosiy</NavLink>
+          <NavLink onClick={handleMenu} to={"/services"}>Xizmat va Kafolat</NavLink>
+          <NavLink onClick={handleMenu} to={"/contacts"}>Kontakt</NavLink>
+          <NavLink onClick={handleMenu} to={"/factories"}>Zavodlar haqida</NavLink>
+          <NavLink onClick={handleMenu} to={"/"}>Kifato rasmiy saytlari</NavLink>
+          <NavLink onClick={handleMenu} to={"/"}>Showrumlar</NavLink>
         </div>
       </div>
     </header>
