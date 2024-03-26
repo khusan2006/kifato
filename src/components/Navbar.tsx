@@ -14,10 +14,10 @@ const Navbar = () => {
             <NavLink to={"/services"}>Xizmat va Kafolat</NavLink>
           </li>
           <li>
-            <NavLink to={"/"}>Kontakt</NavLink>
+            <NavLink to={"/contacts"}>Kontakt</NavLink>
           </li>
           <li>
-            <NavLink to={"/"}>Zavodlar haqida</NavLink>
+            <NavLink to={"/factories"}>Zavodlar haqida</NavLink>
           </li>
           <li>
             <NavLink to={"/"}>Kifato rasmiy saytlari</NavLink>

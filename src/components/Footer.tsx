@@ -43,10 +43,10 @@ const Footer = () => {
             <div className="w-full h-[1px] bg-gray-300 mb-3" />
             <ul className="flex flex-col gap-2 underline">
               <li>
-                <NavLink to={"/"}>Kontakt</NavLink>
+                <NavLink to={"/contacts"}>Kontakt</NavLink>
               </li>
               <li>
-                <NavLink to={"/"}>Zavodlar haqida</NavLink>
+                <NavLink to={"/factories"}>Zavodlar haqida</NavLink>
               </li>
               <li>
                 <NavLink to={"/services"}>Xizmat va Kafolat</NavLink>

@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
+import Factories from "./pages/Factories";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Route element={<Home />} index />
           <Route element={<Services />} path="/services" />
           <Route element={<Contacts />} path="/contacts" />
+          <Route element={<Factories />} path="/factories" />
         </Route>
       </Routes>
     </BrowserRouter>

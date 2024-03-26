@@ -1,11 +1,11 @@
-import Categories from "../components/Categories"
+import Categories from "../components/Categories";
 
 const Home = () => {
   return (
     <>
       <Categories />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
