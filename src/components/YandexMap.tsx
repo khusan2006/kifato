@@ -1,16 +1,14 @@
-import { YMaps, Map } from 'react-yandex-maps';
-
 const YandexMap = () => {
   return (
-    <YMaps>
-      <div>
-        <Map
-          defaultState={{ center: [55.751574, 37.573856], zoom: 10 }}
-          style={{ width: '100%', height: '100%' }}
-        >
-        </Map>
-      </div>
-    </YMaps>
+    <div className="w-full h-full">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0110a7584a917021afa5d53b15d5f7f722b8dce528592cc80170df64d4fbcdb7&amp;source=constructor"
+        width="100%"
+        height="100%"
+        //   frameborder="0"
+        style={{ border: "0" }}
+      ></iframe>
+    </div>
   );
 };
 

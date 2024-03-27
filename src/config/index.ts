@@ -1,0 +1,2 @@
+export const BASE_URL = 'https://ff3dd206-7233-45c2-8b2a-5d34b3f681e9-00-18km0z2u3y55m.riker.replit.dev/api/v1'
+export const IMAGE_URL = 'https://ff3dd206-7233-45c2-8b2a-5d34b3f681e9-00-18km0z2u3y55m.riker.replit.dev'

@@ -23,7 +23,7 @@ const Navbar = () => {
             <NavLink to={"/"}>Kifato rasmiy saytlari</NavLink>
           </li>
           <li className="hidden xl:block ">
-            <NavLink to={"/"}>Showrumlar</NavLink>
+            <NavLink to={"/shovrum"}>Showrumlar</NavLink>
           </li>
         </ul>
         <div className="flex p-2 rounded-md bg-white w-46 lg:w-60 justify-between text-red-500">

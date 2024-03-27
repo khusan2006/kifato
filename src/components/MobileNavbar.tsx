@@ -36,7 +36,7 @@ const MobileNavbar = () => {
           <NavLink onClick={handleMenu} to={"/contacts"}>Kontakt</NavLink>
           <NavLink onClick={handleMenu} to={"/factories"}>Zavodlar haqida</NavLink>
           <NavLink onClick={handleMenu} to={"/"}>Kifato rasmiy saytlari</NavLink>
-          <NavLink onClick={handleMenu} to={"/"}>Showrumlar</NavLink>
+          <NavLink onClick={handleMenu} to={"/shovrum"}>Showrumlar</NavLink>
         </div>
       </div>
     </header>
