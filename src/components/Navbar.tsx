@@ -20,7 +20,7 @@ const Navbar = () => {
             <NavLink to={"/factories"}>Zavodlar haqida</NavLink>
           </li>
           <li className="hidden xl:block ">
-            <NavLink to={"/"}>Kifato rasmiy saytlari</NavLink>
+            <a href="https://kifato.com">Kifato rasmiy saytlari</a>
           </li>
           <li className="hidden xl:block ">
             <NavLink to={"/shovrum"}>Showrumlar</NavLink>

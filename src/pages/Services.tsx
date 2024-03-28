@@ -17,7 +17,7 @@ const Services = () => {
         <Breadcrumbs breadcrumbs={BREADCRUMBS} />
         <ServicesSlider />
         <div className="bg-red-500 text-white flex  flex-col md:flex-row py-8 px-10 border-[2px] shadow-lg gap-4 border-white">
-          <SlidersVerticalIcon size={"100"} stroke="black" />
+          <SlidersVerticalIcon size={"100"} stroke="white" />
           <div className="">
             <h5
               className="text-2xl  underline mb-4"

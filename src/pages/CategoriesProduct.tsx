@@ -6,6 +6,7 @@ import { getProductsByCategory } from "../api/products";
 import { useLocation, useParams } from "react-router-dom";
 import { CategoryType, ProductType } from "../types";
 import Category from "../components/Category";
+import Loading from "../components/Loading";
 
 
 
@@ -16,7 +17,7 @@ const CategoriesProduct = () => {
     queryKey: ["products", id],
     queryFn: () => getProductsByCategory(id),
   });
-  if (!products) return <div>there is no product</div>;
+  if (!products) return <Loading />
   const { data = [] }: { data?: ProductType[] | CategoryType[] | [] } =
     products;
 

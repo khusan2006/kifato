@@ -1,0 +1,10 @@
+
+const Loading = () => {
+  return (
+    <div className="h-[50vh] flex justify-center items-center">
+        Loading...
+    </div>
+  )
+}
+
+export default Loading

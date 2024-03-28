@@ -1,16 +1,19 @@
 import { ShoppingBasketIcon, X } from "lucide-react";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
+    deleteItem,
   getCart,
   getTotalCartPrice,
   getTotalCartQuantity,
 } from "../slices/CartSlice";
 import { IMAGE_URL } from "../config";
+import { NavLink } from "react-router-dom";
 const Cart = () => {
   const items = useSelector(getCart);
   const totalPrice = useSelector(getTotalCartPrice);
   const totalItems = useSelector(getTotalCartQuantity);
+  const dispatch = useDispatch()
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -19,6 +22,9 @@ const Cart = () => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  const handleDelete = (id: string) => {
+    dispatch(deleteItem(id))
+  }
   return (
     <div
       className="flex relative cursor-pointer p-2 rounded-md bg-white w-46 lg:w-60 justify-between text-red-500"
@@ -39,7 +45,7 @@ const Cart = () => {
                 <div className="flex justify-between">
                   <div className="flex flex-col gap-2">
                     <p className="text-sm">
-                      <X className="float-left mt-[3px]" size={"15"} />{" "}
+                      <X onClick={() => handleDelete(item.productId)} className="float-left mt-[3px]" size={"15"} />{" "}
                       {item.name}
                     </p>
                     <p className="text-sm">
@@ -61,9 +67,11 @@ const Cart = () => {
           </div>
           <div className="w-full h-[1px] bg-gray-400 my-3 " />
           <div className="flex flex-col gap-3 py-2 px-4">
-            <button className="w-full py-2 text-red-500 bg-gray-300">
+           <NavLink to={'/cart'}>
+           <button className="w-full py-2 text-red-500 bg-gray-300">
               Savatni korish
             </button>
+           </NavLink>
             <button className="w-full py-2 bg-red-500 text-white">
               Buyurtma
             </button>

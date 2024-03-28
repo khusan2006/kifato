@@ -4,6 +4,7 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import MobileNavbar from "./MobileNavbar";
+import MobileMenu from "./MobileMenu";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
       <Navbar />
       <MobileNavbar />
       <Outlet />
+      <MobileMenu />
       <Footer />
     </>
   );
