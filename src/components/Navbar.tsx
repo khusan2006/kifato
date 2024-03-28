@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { ShoppingBasketIcon } from "lucide-react";
+import Cart from "./Cart";
 
 const Navbar = () => {
   return (
@@ -26,12 +26,7 @@ const Navbar = () => {
             <NavLink to={"/shovrum"}>Showrumlar</NavLink>
           </li>
         </ul>
-        <div className="flex p-2 rounded-md bg-white w-46 lg:w-60 justify-between text-red-500">
-          <p className="flex gap-1 items-center">
-            $0.00 <span className="text-red-400 text-sm"> 0 mahsulotlar</span>
-          </p>
-          <ShoppingBasketIcon />
-        </div>
+        <Cart />
       </MaxWidthWrapper>
     </nav>
   );
