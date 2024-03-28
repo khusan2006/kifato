@@ -12,13 +12,16 @@ const ShowRoom = () => {
       <Breadcrumbs breadcrumbs={BREADCRUMBS} />
       <div className="showroom">
         <div className="showroom__row">
-          <div className="showroom-content">
-            <div className="showroom-content__item">
-              <span className="showroom-content__item-title" id="piter">
+          <div className="py-[20px] px-0 flex justify-center flex-wrap gap-[20px]">
+            <div className="max-w-[280px] p-[10px] shadow-md">
+              <span
+                className="block mb-[20px] text-[18px] text-center"
+                id="piter"
+              >
                 Sankt-Peterburgdagi Showrum
               </span>
-              <div className="showroom-content__item-row">
-                <div className="showroom-content__item-map">
+              <div className="flex flex-col gap-[20px] ">
+                <div className="w-[100%] h-[200px] border">
                   <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ffbfb8856ed897549347b304db0589bc0e2a383fa7e0a73540e57f85fa3be46&amp;source=constructor"
                     width="100%"
@@ -27,10 +30,10 @@ const ShowRoom = () => {
                     style={{ border: "0" }}
                   ></iframe>
                 </div>
-                <div className="showroom-content__item-desc">
+                <div className="flex flex-col gap-[15px] text-[14px] text-[#000]">
                   <a
                     href="+79218926968"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -43,7 +46,7 @@ const ShowRoom = () => {
                   </a>
                   <a
                     href="mailto:spb@kifato.com"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -54,7 +57,7 @@ const ShowRoom = () => {
                     />
                     spb@kifato.com
                   </a>
-                  <span className="showroom-content__item-link">
+                  <span className="flex items-center gap-[15px]">
                     <img
                       decoding="async"
                       src="https://kifatomarket.com/wp-content/uploads/2023/11/address-red.svg"
@@ -69,12 +72,15 @@ const ShowRoom = () => {
                 </div>
               </div>
             </div>
-            <div className="showroom-content__item">
-              <span className="showroom-content__item-title" id="piter">
+            <div className="max-w-[280px] p-[10px] shadow-md">
+              <span
+                className="block mb-[20px] text-[18px] text-center"
+                id="piter"
+              >
                 Moskvadagi Showrum
               </span>
-              <div className="showroom-content__item-row">
-                <div className="showroom-content__item-map">
+              <div className="flex flex-col gap-[20px]">
+                <div className="w-[100%] h-[200px] border">
                   <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A0110a7584a917021afa5d53b15d5f7f722b8dce528592cc80170df64d4fbcdb7&amp;source=constructor"
                     width="100%"
@@ -83,10 +89,10 @@ const ShowRoom = () => {
                     style={{ border: "0" }}
                   ></iframe>
                 </div>
-                <div className="showroom-content__item-desc">
+                <div className="flex flex-col gap-[15px] text-[14px] text-[#000]">
                   <a
                     href="tel:+79299296968"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -99,7 +105,7 @@ const ShowRoom = () => {
                   </a>
                   <a
                     href="mailto:msk@kifato.com"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -110,7 +116,7 @@ const ShowRoom = () => {
                     />
                     msk@kifato.com
                   </a>
-                  <span className="showroom-content__item-link">
+                  <span className="flex items-center gap-[15px]">
                     <img
                       decoding="async"
                       src="https://kifatomarket.com/wp-content/uploads/2023/11/address-red.svg"
@@ -124,12 +130,15 @@ const ShowRoom = () => {
                 </div>
               </div>
             </div>
-            <div className="showroom-content__item">
-              <span className="showroom-content__item-title" id="piter">
+            <div className="max-w-[280px] p-[10px] shadow-md">
+              <span
+                className="block mb-[20px] text-[18px] text-center"
+                id="piter"
+              >
                 Krasnodardagi Showrum
               </span>
-              <div className="showroom-content__item-row">
-                <div className="showroom-content__item-map">
+              <div className="flex flex-col gap-[20px]">
+                <div className="w-[100%] h-[200px] border">
                   <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Acfb373284a30eb990a8ce993781bff2ed3db28ddbd00215397c5396a518882f8&amp;source=constructor"
                     width="100%"
@@ -138,10 +147,10 @@ const ShowRoom = () => {
                     style={{ border: "0" }}
                   ></iframe>
                 </div>
-                <div className="showroom-content__item-desc">
+                <div className="flex flex-col gap-[15px] text-[14px] text-[#000]">
                   <a
                     href="+79892226968"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -155,7 +164,7 @@ const ShowRoom = () => {
 
                   <a
                     href="mailto:kdr@kifato.com"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -166,7 +175,7 @@ const ShowRoom = () => {
                     />
                     kdr@kifato.com
                   </a>
-                  <span className="showroom-content__item-link">
+                  <span className="flex items-center gap-[15px]">
                     <img
                       decoding="async"
                       src="https://kifatomarket.com/wp-content/uploads/2023/11/address-red.svg"
@@ -179,12 +188,15 @@ const ShowRoom = () => {
                 </div>
               </div>
             </div>
-            <div className="showroom-content__item">
-              <span className="showroom-content__item-title" id="piter">
+            <div className="max-w-[280px] p-[10px] shadow-md">
+              <span
+                className="block mb-[20px] text-[18px] text-center"
+                id="piter"
+              >
                 Rostov-na-Donu dagi Showrum
               </span>
-              <div className="showroom-content__item-row">
-                <div className="showroom-content__item-map">
+              <div className="flex flex-col gap-[20px]">
+                <div className="w-[100%] h-[200px] border">
                   <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae624e8548ccd2a906264bed94f064daf5e9a8c2fcd8b305c357da9cd445433da&amp;source=constructor"
                     width="100%"
@@ -193,10 +205,10 @@ const ShowRoom = () => {
                     style={{ border: "0" }}
                   ></iframe>
                 </div>
-                <div className="showroom-content__item-desc">
+                <div className="flex flex-col gap-[15px] text-[14px] text-[#000]">
                   <a
                     href="+79286076968"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -209,7 +221,7 @@ const ShowRoom = () => {
                   </a>
                   <a
                     href="mailto:kdr@kifato.com"
-                    className="showroom-content__item-link"
+                    className="flex items-center gap-[15px]"
                   >
                     <img
                       decoding="async"
@@ -220,7 +232,7 @@ const ShowRoom = () => {
                     />
                     rsd@kifato.com
                   </a>
-                  <span className="showroom-content__item-link">
+                  <span className="flex items-center gap-[15px]">
                     <img
                       decoding="async"
                       src="https://kifatomarket.com/wp-content/uploads/2023/11/address-red.svg"
