@@ -1,10 +1,10 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import Logo from "../assets/kifato-logo.webp";
+import Logo from "../assets/kifato-logo.jpg";
 import { Search } from "lucide-react";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
-    <header className="md:block hidden py-10 bg-gray-100 mt-[5rem]">
+    <header className="md:block hidden py-10 bg-white mt-[5rem]">
       <MaxWidthWrapper className="flex justify-between items-center">
       <NavLink to={'/'}>
       <img src={Logo} alt="kifato logo" className="w-48" />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/kifato-logo.webp";
+import Logo from "../assets/kifato-logo.jpg";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const MobileNavbar = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
   return (
-    <header className="relative md:hidden bg-gray-100 py-28 flex justify-between items-center px-6">
+    <header className="relative md:hidden bg-white py-28 flex justify-between items-center px-6">
      <NavLink to={'/'}>
      <img src={Logo} alt="kifato logo" className="w-52" />
      </NavLink>
