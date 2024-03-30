@@ -4,9 +4,10 @@ import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { useSelector } from "react-redux";
 import { getCart, getTotalCartPrice } from "../slices/CartSlice";
 import { IMAGE_URL } from "../config";
+import { NavLink } from "react-router-dom";
 const BREADCRUMBS = [
   { id: 1, name: "Asosiy", href: "/" },
-  { id: 2, name: "savatcha", href: "/contacts" },
+  { id: 2, name: "savatcha", href: "/cart" },
 ];
 const Cart = () => {
   const items = useSelector(getCart);
@@ -50,8 +51,10 @@ const Cart = () => {
                 <td className="border-0 text-center px-4 py-4">
                   <input
                     type="number"
-                    defaultValue={1}
-                    className="w-12 border-[1px] border-black"
+                    defaultValue={item.quantity}
+                    value={item.quantity}
+                    disabled={true}
+                    className="w-12 border-[1px] border-black flex items-center justify-center"
                   />
                 </td>
                 <td className="border-0 text-center px-4 py-4">
@@ -85,9 +88,11 @@ const Cart = () => {
               <div className="w-[60%] py-2 px-3 bg-gray-200">₽ {totalPrice}</div>
             </div>
           </div>
-          <button className="w-full py-3 bg-red-500 text-white mt-3 mb-12">
+         <NavLink to={'/checkout'}>
+         <button className="w-full py-3 bg-red-500 text-white mt-3 mb-12">
             Buyurtma berish
           </button>
+         </NavLink>
         </div>
       </MaxWidthWrapper>
     </section>

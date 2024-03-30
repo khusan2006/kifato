@@ -7,8 +7,12 @@ import Factories from "./pages/Factories";
 import ShowRoom from "./pages/ShowRoom";
 import CategoriesProduct from "./pages/CategoriesProduct";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import ProductDetail from "./pages/ProductDetail";
+import ThankYou from "./pages/ThankYou";
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -19,7 +23,10 @@ const App = () => {
           <Route element={<Factories />} path="/factories" />
           <Route element={<ShowRoom />} path="/shovrum" />
           <Route element={<CategoriesProduct />} path="/categories/:id" />
+          <Route element={<ProductDetail />} path="/product/:id" />
           <Route element={<Cart />} path="cart" />
+          <Route element={<Checkout />} path="/checkout" />
+          <Route element={<ThankYou />} path="/thank-you" />
         </Route>
       </Routes>
     </BrowserRouter>

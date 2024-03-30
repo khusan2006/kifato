@@ -43,7 +43,7 @@ const CategoriesProduct = () => {
         <div className="my-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 px-4 ">
           {products.is_parent === 0
             ? data?.map((product) => (
-                <Product product={product as ProductType} />
+                <Product product={product as ProductType} category={state} />
               ))
             : data?.map((product) => (
                 <Category category={product as CategoryType} />

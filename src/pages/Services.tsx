@@ -42,31 +42,31 @@ const Services = () => {
           <ul className="flex flex-col gap-3 py-8 font-semibold list-disc list-inside pl-8">
             <li>Uskunaning texnik holatini tekshirish</li>
             <li>
-              tarkibiy qismlar va agregatlarni tashqi shikastlanishlar va
+              Tarkibiy qismlar va agregatlarni tashqi shikastlanishlar va
               mahkamlashlarning ishonchliligi yo'qligi uchun tekshirish
             </li>
             <li>
-              kondanserni chang va axloqsizlikdan tozalash, fanning to'g'ri
+              Kondanserni chang va axloqsizlikdan tozalash, fanning to'g'ri
               aylanish yo'nalishini tekshirish
             </li>
             <li>
-              kompressorni, fan motorlarini, asboblarni va apparatlarni tozalash
+              Kompressorni, fan motorlarini, asboblarni va apparatlarni tozalash
               (agar kerak bo'lsa)
             </li>
             <li>kompressorning ishlashini tekshirish</li>
             <li>
-              elektr davrlarining yaxlitligini tekshirish, kontaktlarni
+              Elektr davrlarining yaxlitligini tekshirish, kontaktlarni
               mahkamlash
             </li>
-            <li>nazorat qilish uskunalarini tekshirish va sozlash</li>
-            <li>harorat sharoitlarini tekshirish va sozlash</li>
+            <li>Nazorat qilish uskunalarini tekshirish va sozlash</li>
+            <li>Harorat sharoitlarini tekshirish va sozlash</li>
             <li>
-              yog'ning darajasini, shaffofligini va tozaligini tekshirish
+              Yog'ning darajasini, shaffofligini va tozaligini tekshirish
               (masofadagi sovuq uchun)
             </li>
             <li>ta'minot kuchlanishini tekshirish</li>
             <li>
-              komponentlar va agregatlarni shoshilinch ta'mirlash, bepul
+              Komponentlar va agregatlarni shoshilinch ta'mirlash, bepul
               almashtirish
             </li>
             <li>1 yil kafolat</li>
