@@ -25,8 +25,8 @@ const ProductDetail = () => {
     queryFn: () => getProductById(id as string),
   });
   const { data: products } = useQuery({
-    queryKey: ["products", state.id],
-    queryFn: () => getProductsByCategory(state.id as string),
+    queryKey: ["products", data?.tur],
+    queryFn: () => getProductsByCategory(data?.tur as string),
   });
   const item = useSelector(getCurrentQuantityById(data?.id as string));
   const BREADCRUMBS = [
@@ -69,7 +69,6 @@ const ProductDetail = () => {
               {data
                 ? data.sifatlar.map((sifat) => {
                     const [items] = Object.entries(sifat);
-                    console.log(items)
                     return (
                       <p>
                         {items[0]} - <strong>{items[1]}</strong>
@@ -93,9 +92,11 @@ const ProductDetail = () => {
         <div className="mt-12">
           <h4 className="text-3xl">Shunga o'xshash mahsulotlar</h4>
           <div className="my-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 px-4 ">
-            {products?.data.map((product: ProductType) => (
-              <Product product={product} category={state} />
-            ))}
+            {products?.length !== 0
+              ? products?.data.map((product: ProductType) => (
+                  <Product product={product} category={state} />
+                ))
+              : null}
           </div>
         </div>
       </MaxWidthWrapper>
