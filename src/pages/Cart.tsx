@@ -1,8 +1,8 @@
 import { X } from "lucide-react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
-import { useSelector } from "react-redux";
-import { getCart, getTotalCartPrice } from "../slices/CartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteItem, getCart, getTotalCartPrice } from "../slices/CartSlice";
 import { IMAGE_URL } from "../config";
 import { NavLink } from "react-router-dom";
 const BREADCRUMBS = [
@@ -12,6 +12,11 @@ const BREADCRUMBS = [
 const Cart = () => {
   const items = useSelector(getCart);
   const totalPrice = useSelector(getTotalCartPrice)
+    const dispatch = useDispatch();
+    const handleDelete = (id: string) => {
+        dispatch(deleteItem(id))
+    }
+
   return (
     <section>
       <MaxWidthWrapper>
@@ -33,8 +38,9 @@ const Cart = () => {
               <tr className="flex flex-col md:table-row">
                 <td className="border-0 text-center px-4 py-4">
                   <X
+                  onClick={() => handleDelete(item.productId)}
                     size={"18"}
-                    className="bg-gray-600 rounded-full text-white"
+                    className="bg-gray-600 cursor-pointer rounded-full text-white"
                   />
                 </td>
                 <td className="border-0 flex justify-center md:table-cell text-center px-4 py-4">
@@ -89,7 +95,7 @@ const Cart = () => {
             </div>
           </div>
          <NavLink to={'/checkout'}>
-         <button className="w-full py-3 bg-red-500 text-white mt-3 mb-12">
+         <button disabled={items.length === 0} className={`w-full py-3 bg-red-500 text-white mt-3 mb-12 ${items.length === 0 ?  'bg-gray-700' : ''}`}>
             Buyurtma berish
           </button>
          </NavLink>

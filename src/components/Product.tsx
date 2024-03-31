@@ -7,11 +7,18 @@ import {
   increaseItemQuantity,
 } from "../slices/CartSlice";
 import { toast } from "sonner";
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
-const Product = ({ product, category }: { product: ProductType, category: CategoryType}) => {
+const Product = ({
+  product,
+  category,
+}: {
+  product: ProductType;
+  category: CategoryType;
+}) => {
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const item = useSelector(getCurrentQuantityById(product.id as string));
   const handleAddItem = () => {
     if (item) {
@@ -26,17 +33,27 @@ const Product = ({ product, category }: { product: ProductType, category: Catego
         totalPrice: product.narx,
         image: product.image,
       };
-      
+
       dispatch(addItem(productInfo));
-      toast.success("mahsulot savatchaga qoshildi");
+      toast.success("mahsulot savatchaga qo'shildi");
     }
   };
 
   const handleClick = () => {
-    navigate(`/product/${product.id}`, {state: category})
-}
+    navigate(`/product/${product.id}`, { state: category });
+  };
+  const handleCart = () => {
+    navigate(`/cart`);
+  };
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   return (
-      <div className="bg-white md:min-h-[23rem] p-3 shadow-md rounded-sm" onClick={handleClick}>
+    <div
+      className="bg-white md:min-h-[23rem] cursor-pointer p-3 shadow-md rounded-sm"
+      onClick={handleClick}
+    >
       <img
         src={`${IMAGE_URL}/${product.image}`}
         alt="O'rnatilgan blokli o'rta haroratli slaydlar (eshiklar bilan)."
@@ -48,16 +65,22 @@ const Product = ({ product, category }: { product: ProductType, category: Catego
         </h6>
         <button
           className="w-full py-2 px-4 bg-red-500 text-white mt-3"
-          onClick={handleAddItem}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleAddItem();
+          }}
         >
-          Savatga qoshish
+          Savatga qo'shish
         </button>
         {item ? (
           <button
             className="w-full py-2 px-4 bg-red-500 text-white mt-3"
-            onClick={handleAddItem}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleCart()
+            }}
           >
-            Savatga otish
+            Savatga o'tish
           </button>
         ) : null}
       </div>

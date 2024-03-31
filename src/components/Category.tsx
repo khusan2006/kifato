@@ -10,7 +10,7 @@ const Category = ({category}: {category: CategoryType}) => {
     }
   return (
 
-    <div className="bg-white md:min-h-[23rem] shadow-md rounded-sm" onClick={handleClick}>
+    <div className="bg-white md:min-h-[23rem] cursor-pointer shadow-md rounded-sm hover:scale-[1.1] transition-all " onClick={handleClick}>
       <img
         src={`${IMAGE_URL}/${category.image}`}
         alt="O'rnatilgan blokli o'rta haroratli slaydlar (eshiklar bilan)."
