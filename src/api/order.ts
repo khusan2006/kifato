@@ -3,7 +3,7 @@ import { BASE_URL } from "../config";
 export const createOrder = async (data: {
   ism: string;
   familya: string;
-  mamlakat: string;
+  Mamlakat: string;
   kompaniya: string | undefined;
   address: string;
   shahar: string;
@@ -14,7 +14,7 @@ export const createOrder = async (data: {
   tovarlar: string;
 }) => {
   try {
-    const response = await fetch(`${BASE_URL}/zakaz`, {
+    const response = await fetch(`${BASE_URL}/zakaz/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

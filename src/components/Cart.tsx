@@ -1,40 +1,20 @@
-import { ShoppingBasketIcon, X } from "lucide-react";
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  deleteItem,
-  getCart,
-  getTotalCartPrice,
-  getTotalCartQuantity,
-} from "../slices/CartSlice";
-import { IMAGE_URL } from "../config";
+import { ShoppingBasketIcon } from "lucide-react";
+import { useSelector } from "react-redux";
+import { getTotalCartQuantity } from "../slices/CartSlice";
 import { NavLink } from "react-router-dom";
 const Cart = () => {
-  const items = useSelector(getCart);
-  const totalPrice = useSelector(getTotalCartPrice);
   const totalItems = useSelector(getTotalCartQuantity);
-  const dispatch = useDispatch();
-  const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-  const handleDelete = (id: string) => {
-    dispatch(deleteItem(id));
-  };
   return (
-    <NavLink to={'/cart'}>
-        <p className=" relative flex items-center gap-2">
-      Savatcha <ShoppingBasketIcon />
-      {totalItems == 0 ? null : (
-        <span className="absolute top-[-8%] right-[-10%] bg-red-700 rounded-full w-4 h-4 text-sm flex items-center justify-center">
-          {totalItems}
-        </span>
-      )}
-    </p>
+    <NavLink to={"/cart"}>
+      <p className=" relative flex items-center gap-2">
+        Savatcha <ShoppingBasketIcon />
+        {totalItems == 0 ? null : (
+          <span className="absolute top-[-8%] right-[-10%] bg-red-700 rounded-full w-4 h-4 text-sm flex items-center justify-center">
+            {totalItems}
+          </span>
+        )}
+      </p>
     </NavLink>
     // <div
     //   className="flex relative cursor-pointer p-2 rounded-md bg-white w-46 lg:w-60 justify-between text-red-500"

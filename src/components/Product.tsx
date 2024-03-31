@@ -15,7 +15,7 @@ const Product = ({
   category,
 }: {
   product: ProductType;
-  category: CategoryType;
+  category?: CategoryType;
 }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();

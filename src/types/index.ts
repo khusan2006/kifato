@@ -15,7 +15,8 @@ export interface ProductType {
   opis: string;
   tur: string;
   razmer: string;
-  
+  sifatlar: {[prop: string]: string}[]
+
 }
 
 

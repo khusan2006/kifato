@@ -66,18 +66,17 @@ const ProductDetail = () => {
             <h2 className="text-3xl font-medium">{data?.desc}</h2>
             <p className="text-2xl font-semibold mt-5">${data?.narx} (QQsiz)</p>
             <div className="flex flex-col gap-4 mt-5">
-              <p>
-                O'lchamlar (UxDxY) - <strong> 1250x900x2150mm</strong>
-              </p>
-              <p>
-                HARORAT REJIMI - <strong> 0°+6°C</strong>
-              </p>
-              <p>
-                Foydali Hajmi - <strong> 1200 l</strong>
-              </p>
-              <p>
-                Korsatma Maydoni - <strong> 3,9 m²</strong>
-              </p>
+              {data
+                ? data.sifatlar.map((sifat) => {
+                    const [items] = Object.entries(sifat);
+                    console.log(items)
+                    return (
+                      <p>
+                        {items[0]} - <strong>{items[1]}</strong>
+                      </p>
+                    );
+                  })
+                : null}
             </div>
             <button
               onClick={handleAddItem}

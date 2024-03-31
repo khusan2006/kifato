@@ -31,7 +31,7 @@ const Checkout: React.FC = () => {
     const res = {
       ism: data.firstName,
       familya: data.lastName,
-      mamlakat: data.country,
+      Mamlakat: data.country,
       kompaniya: data.companyName,
       address: data.address,
       shahar: data.city,
