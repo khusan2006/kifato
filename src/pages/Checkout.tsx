@@ -30,7 +30,7 @@ const Checkout: React.FC = () => {
     const tovars = items.map((product) => product.productId).join(" ");
     const res = {
       ism: data.firstName,
-      familya: data.lastName,
+      familiya: data.lastName,
       Mamlakat: data.country,
       kompaniya: data.companyName,
       address: data.address,

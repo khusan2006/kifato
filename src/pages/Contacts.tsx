@@ -39,8 +39,11 @@ const Contacts = () => {
             <div className="flex flex-col gap-3 w-[70%] text-sm">
               <a className="flex gap-2 items-center " href="/">
                 <MapPin stroke="red" className="shrink-0" />
-                Moskva viloyati, Klin shahri, Volokolamskoe shossesi, 33, bino
-                3. Ishlab chiqarish
+                Sankt-Peterburg, 69A Revolyutsiya shossesi, ko'p. 102, 3-qavat,
+                ofis 306 Skandinaviya biznes markazi ko'rgazma zali
+              </a>
+              <a className="flex gap-2 items-center" href="">
+                <PhoneCall stroke="red" /> +7 921 892 69 68 - savdo bo'limi
               </a>
               <a className="flex gap-2 items-center" href="">
                 <PhoneCall stroke="red" /> +7 929 929 69 68 - savdo bo'limi
@@ -49,18 +52,15 @@ const Contacts = () => {
                 className="flex gap-2 items-center"
                 href="mailto:sale@kifatomarket.com"
               >
-                <Mail stroke="red" /> sale@kifatomarket.com
-              </a>
-              <a className="flex gap-2 items-center" href="">
-                <Mail stroke="red" /> zavod@kifato.com
+                <Mail stroke="red" /> spb@kifatomarket.com
               </a>
             </div>
             <div className="w-full h-[1.5px] bg-gray-600 my-4" />
             <div className="flex flex-col gap-3 w-[70%] text-sm">
               <a className="flex gap-2 items-center " href="/">
                 <MapPin stroke="red" className="shrink-0" />
-                Moskva viloyati, Klin shahri, Volokolamskoe shossesi, 33, bino
-                3. Ishlab chiqarish
+                Moskva avtomagistrali Dmitrovskoe 71B, 1-qavat, ofis 109 Biznes
+                markazi-7ONE ko'rgazma zali
               </a>
               <a className="flex gap-2 items-center" href="">
                 <PhoneCall stroke="red" /> +7 929 929 69 68 - savdo bo'limi
@@ -69,51 +69,35 @@ const Contacts = () => {
                 className="flex gap-2 items-center"
                 href="mailto:sale@kifatomarket.com"
               >
-                <Mail stroke="red" /> sale@kifatomarket.com
-              </a>
-              <a className="flex gap-2 items-center" href="">
-                <Mail stroke="red" /> zavod@kifato.com
+                <Mail stroke="red" /> msk@kifatomarket.com
               </a>
             </div>
             <div className="w-full h-[1.5px] bg-gray-600 my-4" />
             <div className="flex flex-col gap-3 w-[70%] text-sm">
               <a className="flex gap-2 items-center " href="/">
                 <MapPin stroke="red" className="shrink-0" />
-                Moskva viloyati, Klin shahri, Volokolamskoe shossesi, 33, bino
-                3. Ishlab chiqarish
+                Krasnodar avtomagistrali Rostovskoe, 23 ko'rgazma zali
               </a>
               <a className="flex gap-2 items-center" href="">
-                <PhoneCall stroke="red" /> +7 929 929 69 68 - savdo bo'limi
+                <PhoneCall stroke="red" /> +7 999 222 69 68 - savdo bo'limi
               </a>
               <a
                 className="flex gap-2 items-center"
                 href="mailto:sale@kifatomarket.com"
               >
-                <Mail stroke="red" /> sale@kifatomarket.com
-              </a>
-              <a className="flex gap-2 items-center" href="">
-                <Mail stroke="red" /> zavod@kifato.com
+                <Mail stroke="red" /> kdr@kifatomarket.com
               </a>
             </div>
             <div className="w-full h-[1.5px] bg-gray-600 my-4" />
             <div className="flex flex-col gap-3 w-[70%] text-sm">
               <a className="flex gap-2 items-center " href="/">
                 <MapPin stroke="red" className="shrink-0" />
-                Moskva viloyati, Klin shahri, Volokolamskoe shossesi, 33, bino
-                3. Ishlab chiqarish
+                Rostov-na-Don prospekti. Mixail Nagibin 30I, ko'rgazma zali
               </a>
               <a className="flex gap-2 items-center" href="">
-                <PhoneCall stroke="red" /> +7 929 929 69 68 - savdo bo'limi
+                <PhoneCall stroke="red" /> +7 928 607 69 68 - savdo bo'limi
               </a>
-              <a
-                className="flex gap-2 items-center"
-                href="mailto:sale@kifatomarket.com"
-              >
-                <Mail stroke="red" /> sale@kifatomarket.com
-              </a>
-              <a className="flex gap-2 items-center" href="">
-                <Mail stroke="red" /> zavod@kifato.com
-              </a>
+            
             </div>
           </div>
           <div className="flex-[3] overflow-hidden">
@@ -121,7 +105,7 @@ const Contacts = () => {
           </div>
         </div>
         <div className="my-20">
-            <ContactUsForm />
+          <ContactUsForm />
         </div>
       </MaxWidthWrapper>
     </section>

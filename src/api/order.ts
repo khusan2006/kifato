@@ -1,17 +1,17 @@
 import { BASE_URL } from "../config";
 
 export const createOrder = async (data: {
-  ism: string;
-  familya: string;
-  Mamlakat: string;
-  kompaniya: string | undefined;
-  address: string;
-  shahar: string;
-  tuman: string;
-  pochta: number;
-  telefon: string;
-  email: string;
-  tovarlar: string;
+    ism: string;
+    familiya: string;
+    Mamlakat: string;
+    kompaniya: string | undefined;
+    address: string;
+    shahar: string;
+    tuman: string;
+    pochta: number;
+    telefon: string;
+    email: string;
+    tovarlar: string;
 }) => {
   try {
     const response = await fetch(`${BASE_URL}/zakaz/`, {

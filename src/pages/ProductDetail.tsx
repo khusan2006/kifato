@@ -31,7 +31,7 @@ const ProductDetail = () => {
   const item = useSelector(getCurrentQuantityById(data?.id as string));
   const BREADCRUMBS = [
     { id: 1, name: "Asosiy", href: "/" },
-    { id: 2, name: state?.desc || "category", href: `categories/${state?.id}` },
+    { id: 2, name: state?.desc || "category", href: `/` },
     { id: 3, name: data?.desc || "product", href: `/product/${data?.id}` },
   ];
 
@@ -92,7 +92,7 @@ const ProductDetail = () => {
         <div className="mt-12">
           <h4 className="text-3xl">Shunga o'xshash mahsulotlar</h4>
           <div className="my-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 px-4 ">
-            {products?.length !== 0
+            {products?.data
               ? products?.data.map((product: ProductType) => (
                   <Product product={product} category={state} />
                 ))
